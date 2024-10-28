@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="680.0" prefWidth="900.0" styleClass="welcome-1stAP-bg" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sms.AddStudentController">
+    <children>
+        <AnchorPane layoutX="62.0" layoutY="46.0" prefHeight="588.0" prefWidth="775.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+            <children>
+                <Text fill="#45d7fc" layoutX="116.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Student To The System">
+                    <font>
+                        <Font name="Calibri Bold" size="42.0" />
+                    </font>
+                </Text>
+                <Button fx:id="backButton" layoutX="266.0" layoutY="531.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="42.0" prefWidth="270.0" style="-fx-background-radius: 20;" text="Back To Home Page" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="button-design" />
+                        <String fx:value="button-hover-design" />
+                    </styleClass>
+                </Button>
+                <TextField fx:id="nametxtField" layoutX="353.0" layoutY="176.0" prefHeight="26.0" prefWidth="264.0" promptText="Name" styleClass="text-field-design" />
+                <Text layoutX="158.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name">
+                    <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text layoutX="159.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
+                    <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="idtxtField" layoutX="353.0" layoutY="219.0" prefHeight="26.0" prefWidth="264.0" promptText="ID" styleClass="text-field-design" />
+                <Text layoutX="159.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Age">
+                    <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="agetxtField" layoutX="353.0" layoutY="305.0" prefHeight="26.0" prefWidth="264.0" promptText="Age" styleClass="text-field-design" />
+                <Text layoutX="158.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth">
+                    <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                    </font>
+                </Text>
+                <DatePicker fx:id="datepicker1" layoutX="353.0" layoutY="345.0" prefHeight="26.0" prefWidth="264.0" promptText="Select Date" styleClass="date-picker-design" />
+                <Button layoutX="335.0" layoutY="419.0" mnemonicParsing="false" onAction="#saveStudentAction" prefHeight="42.0" prefWidth="131.0" style="-fx-background-radius: 20;" text="Save" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="button-design" />
+                        <String fx:value="button-hover-design" />
+                    </styleClass>
+                </Button>
+                <Text layoutX="158.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Class">
+                    <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="classtxtField" layoutX="353.0" layoutY="261.0" prefHeight="26.0" prefWidth="264.0" promptText="Class" styleClass="text-field-design" />
+                <Label fx:id="wrongInput" layoutX="374.0" layoutY="391.0" />
+                <TextFlow fx:id="tf_show" layoutX="257.0" layoutY="84.0" prefHeight="72.0" prefWidth="287.0" textAlignment="JUSTIFY" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="dashboard-1stAP-bg" stylesheets="@../../../CSS/Dashboard.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sms.VaccineStatusController">
+    <children>
+        <AnchorPane layoutX="43.0" layoutY="43.0" prefHeight="615.0" prefWidth="806.0" styleClass="dashboard-2ndAP-bg" stylesheets="@../../../CSS/Dashboard.css">
+            <children>
+                <AnchorPane prefHeight="615.0" prefWidth="163.0" styleClass="dashboard-3rdAP-bg" stylesheets="@../../../CSS/Dashboard.css">
+                    <children>
+                        <VBox layoutY="107.0" prefHeight="401.0" prefWidth="165.0">
+                            <children>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Dashboard" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/dashboardIcon2.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Schedules" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/Schedule_Icon-removebg-preview.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button fx:id="reg_btn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToRegistration" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Registration" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/registration_logo.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToPayTheFess" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Pay The Fees" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/PaymentLogo.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Vaccine Status" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/vc_status.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToSettings" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="FAQ" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/FAQ_Logo.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToMediCare" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Medi Care" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/heartLogo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu-button-design" />
+                              <String fx:value="menu-hover-button-design" />
+                              <String fx:value="sidebar-item" />
+                           </styleClass>
+                        </Button>
+                            </children>
+                        </VBox>
+                        <Button fx:id="logout" alignment="BASELINE_LEFT" layoutY="560.0" mnemonicParsing="false" onAction="#switchToLogInPage" prefHeight="34.0" prefWidth="165.0" stylesheets="@../../../CSS/Dashboard.css" text="Log out" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri Bold" size="18.0" />
+                            </font>
+                            <styleClass>
+                                <String fx:value="menu-button-design" />
+                                <String fx:value="sidebar-item" />
+                                <String fx:value="menu-hover-button-design" />
+                            </styleClass>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../Images/logout-removebg-preview.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="303.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" />
+                <Line endX="546.0" layoutX="266.0" layoutY="108.0" startX="-95.0" stroke="#329d9c" />
+                <AnchorPane prefHeight="107.0" prefWidth="814.0" style="-fx-background-radius: 20 20 0 0;" styleClass="announcement-4thAP-bg" stylesheets="@../../../CSS/Dashboard.css">
+                    <children>
+                        <TextField layoutX="577.0" layoutY="26.0" prefHeight="34.0" prefWidth="131.0" promptText=" Search here" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: WHITE;">
+                            <font>
+                                <Font name="Calibri Bold" size="13.0" />
+                            </font>
+                        </TextField>
+                        <ImageView fitHeight="20.0" fitWidth="22.0" layoutX="679.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/search-icon-pngWhite-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <Text fill="#329d9c" layoutX="1.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
+                            <font>
+                                <Font name="Calibri Bold" size="27.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="94.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management">
+                            <font>
+                                <Font name="Calibri Bold" size="27.0" />
+                            </font>
+                        </Text>
+                        <Text fill="#329d9c" layoutX="250.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System">
+                            <font>
+                                <Font name="Calibri Bold" size="27.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="743.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/PA2-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="74.0" fitWidth="101.0" layoutX="-5.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/studentIconNew.png" />
+                            </image>
+                        </ImageView>
+                        <Text fx:id="txt_username" layoutX="744.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserName" />
+                    </children>
+                </AnchorPane>
+            <Text fill="#329d9c" layoutX="171.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Vaccine Information">
+               <font>
+                  <Font name="Calibri Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="171.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Dose Vaccine Name">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="171.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Second Dose Taken Date">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="171.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Dose Taken Date">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="171.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Second Dose Vaccine Name">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="choicebox1" layoutX="434.0" layoutY="239.0" prefHeight="26.0" prefWidth="163.0" />
+            <ChoiceBox fx:id="choicebox2" layoutX="436.0" layoutY="335.0" prefHeight="26.0" prefWidth="163.0" />
+            <Button fx:id="update" layoutX="399.0" layoutY="504.0" mnemonicParsing="false" onAction="#onClickUpdate" text="Update">
+               <font>
+                  <Font name="Calibri Bold" size="19.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="datePicker1" layoutX="436.0" layoutY="285.0" prefHeight="26.0" prefWidth="163.0" />
+            <DatePicker fx:id="datePicker2" layoutX="436.0" layoutY="382.0" prefHeight="26.0" prefWidth="163.0" />
+            <Text layoutX="171.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your ID">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id_field" layoutX="434.0" layoutY="187.0" prefHeight="26.0" prefWidth="163.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

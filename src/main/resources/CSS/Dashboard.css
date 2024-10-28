@@ -1,0 +1,27 @@
+.dashboard-1stAP-bg{
+    -fx-background-color: linear-gradient(to right, #A8dee0,#e7e7e7);
+}
+.dashboard-2ndAP-bg{
+    -fx-background-color: #ffffff;
+    -fx-background-radius:20px;
+}
+.dashboard-3rdAP-bg{
+    -fx-background-color: linear-gradient(#ffffff,#e7e7e7);
+    -fx-background-radius: 20 0 0 20px;
+}
+.menu-hover-button-design:hover {
+    -fx-background-color: linear-gradient(#205072,#329d9c);
+}
+.menu-button-design {
+    -fx-background-color: linear-gradient(to right, #4adede, #329d9c);
+    -fx-background-radius: 0px;
+    -fx-cursor: hand;
+}
+.sidebar-item:hover{
+    -fx-border-color: WHITE;
+    -fx-border-width:  0 5 0 0 px;
+}
+.announcement-4thAP-bg {
+    -fx-background-color: linear-gradient(#ffffff, #e7e7e7);
+
+}

@@ -1,0 +1,30 @@
+.text-field-design{
+    -fx-background-color: linear-gradient(to right,#4adede,#329d9c);
+    -fx-border-radius: 50px;
+}
+.login-button-design{
+    -fx-background-color: linear-gradient(to right,#4adede,#329d9c);
+    -fx-background-radius:20px;
+    -fx-cursor: hand;
+}
+.hbutton-design:hover{
+    -fx-background-color: linear-gradient(#205072,#329d9c);
+}
+
+.new-bg-left{
+    -fx-background-color: linear-gradient(to right,#4adede,#329d9c);
+}
+.new-bg-right{
+    -fx-background-color: linear-gradient(#ffffff,#e7e7e7)
+}
+.new-text-field-design{
+    -fx-background-color: transparent;
+    -fx-border-radius: 50px;
+    -fx-border-color: linear-gradient(#4adede,#329d9c);
+}
+.new-sign-in-button-design{
+    -fx-background-color: linear-gradient(#4adede,#329d9c);
+    -fx-background-radius:20px;
+    -fx-cursor: hand;
+}
+

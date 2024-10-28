@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="dashboard-1stAP-bg" stylesheets="@../../../CSS/Dashboard.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sms.MediCareController">
+    <children>
+        <AnchorPane layoutX="43.0" layoutY="43.0" prefHeight="615.0" prefWidth="806.0" styleClass="dashboard-2ndAP-bg" stylesheets="@../../../CSS/Dashboard.css">
+            <children>
+                <AnchorPane prefHeight="615.0" prefWidth="163.0" styleClass="dashboard-3rdAP-bg" stylesheets="@../../../CSS/Dashboard.css">
+                    <children>
+                        <VBox layoutY="107.0" prefHeight="401.0" prefWidth="173.0">
+                            <children>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="48.0" prefWidth="179.0" stylesheets="@../../../CSS/Dashboard.css" text="Dashboard" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/dashboardIcon2.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="48.0" prefWidth="180.0" stylesheets="@../../../CSS/Dashboard.css" text="Schedules" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/Schedule_Icon-removebg-preview.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button fx:id="reg_btn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToRegistration" prefHeight="48.0" prefWidth="181.0" stylesheets="@../../../CSS/Dashboard.css" text="Registration" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/registration_logo.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToPayTheFess" prefHeight="48.0" prefWidth="178.0" stylesheets="@../../../CSS/Dashboard.css" text="Pay The Fees" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/PaymentLogo.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToVaccineStatus" prefHeight="48.0" prefWidth="179.0" stylesheets="@../../../CSS/Dashboard.css" text="Vaccine Status" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/vc_status.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToSettings" prefHeight="48.0" prefWidth="177.0" stylesheets="@../../../CSS/Dashboard.css" text="FAQ" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/FAQ_Logo.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="302.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="179.0" stylesheets="@../../../CSS/Dashboard.css" text="Medi Care" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="18.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/heartLogo.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="menu-button-design" />
+                                        <String fx:value="menu-hover-button-design" />
+                                        <String fx:value="sidebar-item" />
+                                    </styleClass>
+                                </Button>
+                            </children>
+                        </VBox>
+                        <Button fx:id="logout" alignment="BASELINE_LEFT" layoutY="560.0" mnemonicParsing="false" onAction="#switchToLogInPage" prefHeight="34.0" prefWidth="173.0" stylesheets="@../../../CSS/Dashboard.css" text="Log out" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri Bold" size="18.0" />
+                            </font>
+                            <styleClass>
+                                <String fx:value="menu-button-design" />
+                                <String fx:value="sidebar-item" />
+                                <String fx:value="menu-hover-button-design" />
+                            </styleClass>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../Images/logout-removebg-preview.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Dashboard" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri Bold" size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../Images/dashboardIcon2.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <styleClass>
+                                <String fx:value="menu-button-design" />
+                                <String fx:value="menu-hover-button-design" />
+                                <String fx:value="sidebar-item" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <Line endX="546.0" layoutX="266.0" layoutY="108.0" startX="-95.0" stroke="#329d9c" />
+                <AnchorPane prefHeight="107.0" prefWidth="814.0" style="-fx-background-radius: 20 20 0 0;" styleClass="announcement-4thAP-bg" stylesheets="@../../../CSS/Dashboard.css">
+                    <children>
+                        <TextField layoutX="577.0" layoutY="26.0" prefHeight="34.0" prefWidth="131.0" promptText=" Search here" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: WHITE;">
+                            <font>
+                                <Font name="Calibri Bold" size="13.0" />
+                            </font>
+                        </TextField>
+                        <ImageView fitHeight="20.0" fitWidth="22.0" layoutX="679.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/search-icon-pngWhite-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <Text fill="#329d9c" layoutX="1.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
+                            <font>
+                                <Font name="Calibri Bold" size="27.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="94.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management">
+                            <font>
+                                <Font name="Calibri Bold" size="27.0" />
+                            </font>
+                        </Text>
+                        <Text fill="#329d9c" layoutX="250.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System">
+                            <font>
+                                <Font name="Calibri Bold" size="27.0" />
+                            </font>
+                        </Text>
+                        <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="743.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/PA2-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="74.0" fitWidth="101.0" layoutX="-5.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/studentIconNew.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="label_username" layoutX="755.0" layoutY="82.0" text="Label">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="666.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/Chat_Logo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            <ImageView fitHeight="204.0" fitWidth="642.0" layoutX="218.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/medi.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="239.0" layoutY="128.0" text="Welcome!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="239.0" layoutY="164.0" text="Let's check your health with us." textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="239.0" layoutY="195.0" text="Take care of your health" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="239.0" layoutY="222.0" text="To live a sound life." textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="181.0" layoutY="336.0" prefHeight="274.0" prefWidth="290.0">
+               <children>
+                  <Label text="Daily Tips">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="-3.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/tips.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="42.0" layoutY="51.0" text="Drink only safe water">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="-3.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/tips.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="42.0" layoutY="100.0" prefHeight="26.0" prefWidth="275.0" text="Check your blood pressure regularly">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="-4.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/tips.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="-3.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/tips.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="42.0" layoutY="148.0" prefHeight="26.0" prefWidth="275.0" text="Eat vegetables and fruits">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="198.0" prefHeight="26.0" prefWidth="275.0" text="Clean your hands properly">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ListView fx:id="listofProblems" layoutX="499.0" layoutY="396.0" prefHeight="154.0" prefWidth="303.0" />
+            <Label layoutX="575.0" layoutY="343.0" text="Medical Problems">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="add_prb_btn" layoutX="730.0" layoutY="562.0" mnemonicParsing="false" onMouseClicked="#addProblem" prefHeight="19.0" prefWidth="71.0" styleClass="addCourse" stylesheets="@../../../CSS/Registration.css" text="Add">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete_prb_btn" layoutX="499.0" layoutY="562.0" mnemonicParsing="false" onMouseClicked="#deleteProblem" prefHeight="19.0" prefWidth="71.0" styleClass="addCourse" stylesheets="@../../../CSS/Registration.css" text="Delete">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="problemField" layoutX="575.0" layoutY="562.0" prefHeight="27.0" prefWidth="152.0" promptText="Type your problem here" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

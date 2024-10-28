@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="680.0" prefWidth="900.0" styleClass="welcome-1stAP-bg" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sms.SAMController">
+    <children>
+        <AnchorPane layoutX="72.0" layoutY="46.0" prefHeight="588.0" prefWidth="755.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+            <children>
+                <Text layoutX="142.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Student">
+                    <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="tf_FindStudent" layoutX="341.0" layoutY="119.0" prefHeight="26.0" prefWidth="264.0" promptText="Type Student ID here" styleClass="text-field-design" />
+                <TextField fx:id="tf_id" layoutX="345.0" layoutY="242.0" prefHeight="26.0" prefWidth="264.0" styleClass="text-field-design" />
+                <TextField fx:id="tf_pass" layoutX="345.0" layoutY="281.0" prefHeight="26.0" prefWidth="264.0" styleClass="text-field-design" />
+                <Text layoutX="142.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
+                    <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text layoutX="142.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Password">
+                    <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Button layoutX="211.0" layoutY="420.0" mnemonicParsing="false" onAction="#getData" prefHeight="35.0" prefWidth="106.0" style="-fx-background-radius: 20;" text="Get Value" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="button-design" />
+                        <String fx:value="button-hover-design" />
+                    </styleClass>
+                </Button>
+                <Button layoutX="477.0" layoutY="420.0" mnemonicParsing="false" onAction="#ConfirmUpdate" prefHeight="35.0" prefWidth="106.0" style="-fx-background-radius: 20;" text="Save" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="button-design" />
+                        <String fx:value="button-hover-design" />
+                    </styleClass>
+                </Button>
+                <Button layoutX="623.0" layoutY="118.0" mnemonicParsing="false" onAction="#FindStudent" prefHeight="28.0" prefWidth="76.0" style="-fx-background-radius: 20;" text="Search" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="button-design" />
+                        <String fx:value="button-hover-design" />
+                    </styleClass>
+                </Button>
+                <Label fx:id="Show" layoutX="245.0" layoutY="66.0" prefHeight="35.0" prefWidth="264.0" textFill="#6651ea">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Text fill="#45d7fc" layoutX="206.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Password">
+                    <font>
+                        <Font name="Calibri Bold" size="42.0" />
+                    </font>
+                </Text>
+                <Button layoutX="345.0" layoutY="532.0" mnemonicParsing="false" onAction="#backToDashBoard" prefHeight="35.0" prefWidth="143.0" style="-fx-background-radius: 20;" text="Dashboard" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="button-design" />
+                        <String fx:value="button-hover-design" />
+                    </styleClass>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
